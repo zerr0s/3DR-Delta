@@ -109,8 +109,8 @@
 #define DELTA_DIAGONAL_ROD 193.50 // mm
 
 // Horizontal offset from middle of printer to smooth rod center.
-//#define DELTA_SMOOTH_ROD_OFFSET 135.98 // mm
-#define DELTA_SMOOTH_ROD_OFFSET 177.0 // mm1
+#define DELTA_SMOOTH_ROD_OFFSET 135.98 // mm
+//#define DELTA_SMOOTH_ROD_OFFSET 177.0 // mm1
 
 // Horizontal offset of the universal joints on the end effector.
 //#define DELTA_EFFECTOR_OFFSET 23.0 // mm
@@ -118,13 +118,14 @@
 
 // Horizontal offset of the universal joints on the carriages.
 //#define DELTA_CARRIAGE_OFFSET 17.0 // mm
-#define DELTA_CARRIAGE_OFFSET 25.0 // mm
+#define DELTA_CARRIAGE_OFFSET 21.0 // mm
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
 
 // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
-#define DELTA_PRINTABLE_RADIUS 65.0
+//#define DELTA_PRINTABLE_RADIUS 65.0
+#define DELTA_PRINTABLE_RADIUS 80.0
 
 // Effective X/Y positions of the three vertical towers.
 #define SIN_60 0.8660254037844386
