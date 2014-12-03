@@ -105,20 +105,24 @@
 #define DELTA_SEGMENTS_PER_SECOND 200
 
 // Center-to-center distance of the holes in the diagonal push rods.
-//#define DELTA_DIAGONAL_ROD 191.96 // mm
-#define DELTA_DIAGONAL_ROD 193.50 // mm
+#define DELTA_DIAGONAL_ROD 191.96 // mm
+//#define DELTA_DIAGONAL_ROD 193.0 // mm
 
 // Horizontal offset from middle of printer to smooth rod center.
 #define DELTA_SMOOTH_ROD_OFFSET 135.98 // mm
-//#define DELTA_SMOOTH_ROD_OFFSET 140.0 // mm1
+//#define DELTA_SMOOTH_ROD_OFFSET 173.09 // mm1
+//#define DELTA_SMOOTH_ROD_OFFSET 136.0 // mm1
 
 // Horizontal offset of the universal joints on the end effector.
 //#define DELTA_EFFECTOR_OFFSET 23.0 // mm
-#define DELTA_EFFECTOR_OFFSET 16.0 // mm
+//#define DELTA_EFFECTOR_OFFSET 16.0 // mm
+//#define DELTA_EFFECTOR_OFFSET 26.78 // mm
+#define DELTA_EFFECTOR_OFFSET 16.00 // mm
 
 // Horizontal offset of the universal joints on the carriages.
 //#define DELTA_CARRIAGE_OFFSET 21.0 // mm
-#define DELTA_CARRIAGE_OFFSET 12.0 // mm
+//#define DELTA_CARRIAGE_OFFSET 12.0 // mm
+#define DELTA_CARRIAGE_OFFSET 18.51 // mm
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
@@ -469,7 +473,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // For deltabots this means top and center of the Cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 184.3//Reza 180//197//Oli 190//Philippe 174.3//Mark 181.8 // For delta: Distance between nozzle and print surface after homing.
+#define MANUAL_Z_HOME_POS 183.9//Reza 180//197//Oli 190//Philippe 174.3//Mark 181.8 // For delta: Distance between nozzle and print surface after homing.
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
