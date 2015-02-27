@@ -105,24 +105,17 @@
 #define DELTA_SEGMENTS_PER_SECOND 200
 
 // Center-to-center distance of the holes in the diagonal push rods.
-#define DELTA_DIAGONAL_ROD 191.96 // mm
-//#define DELTA_DIAGONAL_ROD 193.0 // mm
+#define DELTA_DIAGONAL_ROD 195.0 // mm FIX !!!
 
 // Horizontal offset from middle of printer to smooth rod center.
-#define DELTA_SMOOTH_ROD_OFFSET 135.98 // mm
-//#define DELTA_SMOOTH_ROD_OFFSET 173.09 // mm1
-//#define DELTA_SMOOTH_ROD_OFFSET 136.0 // mm1
+//#define DELTA_SMOOTH_ROD_OFFSET 137.95 // mm // Initial mesurement
+#define DELTA_SMOOTH_ROD_OFFSET 145.50 // mm
 
 // Horizontal offset of the universal joints on the end effector.
-//#define DELTA_EFFECTOR_OFFSET 23.0 // mm
-//#define DELTA_EFFECTOR_OFFSET 16.0 // mm
-//#define DELTA_EFFECTOR_OFFSET 26.78 // mm
-#define DELTA_EFFECTOR_OFFSET 16.00 // mm
+#define DELTA_EFFECTOR_OFFSET 21.66
 
-// Horizontal offset of the universal joints on the carriages.
-//#define DELTA_CARRIAGE_OFFSET 21.0 // mm
-//#define DELTA_CARRIAGE_OFFSET 12.0 // mm
-#define DELTA_CARRIAGE_OFFSET 18.51 // mm
+// Horizontal offset of the universal joints on the carriages.(-
+#define DELTA_CARRIAGE_OFFSET 20.46
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
@@ -207,7 +200,7 @@
 #define HEATER_0_MAXTEMP 295
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
-#define BED_MAXTEMP 150
+#define BED_MAXTEMP 70
 
 // If your bed has low resistance e.g. .6 ohm and throws the fuse you can duty cycle it to reduce the
 // average current. The value should be an integer and the heat bed will be turned on for 1 interval of
@@ -381,12 +374,18 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define max_software_endstops true  // If true, axis won't move to coordinates greater than the defined lengths below.
 
 // Travel limits after homing
-#define X_MAX_POS DELTA_PRINTABLE_RADIUS
+/*#define X_MAX_POS DELTA_PRINTABLE_RADIUS
 #define X_MIN_POS -DELTA_PRINTABLE_RADIUS
 #define Y_MAX_POS DELTA_PRINTABLE_RADIUS
 #define Y_MIN_POS -DELTA_PRINTABLE_RADIUS
-#define Z_MAX_POS MANUAL_Z_HOME_POS
+#define Z_MAX_POS MANUAL_Z_HOME_POS*/
+#define X_MAX_POS 90
+#define X_MIN_POS -90
+#define Y_MAX_POS 90
+#define Y_MIN_POS -90
 #define Z_MIN_POS 0
+#define Z_MAX_POS MANUAL_Z_HOME_POS
+//#define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
 #define Y_MAX_LENGTH (Y_MAX_POS - Y_MIN_POS)
@@ -473,11 +472,13 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // For deltabots this means top and center of the Cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-#define MANUAL_Z_HOME_POS 183.9//Reza 180//197//Oli 190//Philippe 174.3//Mark 181.8 // For delta: Distance between nozzle and print surface after homing.
+//#define MANUAL_Z_HOME_POS 183.9//Reza 180//197//Oli 190//Philippe 174.3//Mark 181.8 // For delta: Distance between nozzle and print surface after homing.
+#define MANUAL_Z_HOME_POS 182.0
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
 #define HOMING_FEEDRATE {200*60, 200*60, 200*60, 0}  // set the homing speeds (mm/min)
+//#define HOMING_FEEDRATE {50*60, 50*60, 50*60, 0} 
 
 
 // default settings
