@@ -473,7 +473,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
 //#define MANUAL_Z_HOME_POS 183.9//Reza 180//197//Oli 190//Philippe 174.3//Mark 181.8 // For delta: Distance between nozzle and print surface after homing.
-#define MANUAL_Z_HOME_POS 182.0
+#define MANUAL_Z_HOME_POS 181.0
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
