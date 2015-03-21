@@ -109,7 +109,8 @@
 
 // Horizontal offset from middle of printer to smooth rod center.
 //#define DELTA_SMOOTH_ROD_OFFSET 137.95 // mm // Initial mesurement
-#define DELTA_SMOOTH_ROD_OFFSET 145.50 // mm
+//#define DELTA_SMOOTH_ROD_OFFSET 145.50 // mm
+#define DELTA_SMOOTH_ROD_OFFSET 140.0 // mm
 
 // Horizontal offset of the universal joints on the end effector.
 #define DELTA_EFFECTOR_OFFSET 21.66
@@ -118,7 +119,7 @@
 #define DELTA_CARRIAGE_OFFSET 20.46
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
-#define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
+#define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET+1.0)
 
 // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
 //#define DELTA_PRINTABLE_RADIUS 65.0
@@ -473,7 +474,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
 //#define MANUAL_Z_HOME_POS 183.9//Reza 180//197//Oli 190//Philippe 174.3//Mark 181.8 // For delta: Distance between nozzle and print surface after homing.
-#define MANUAL_Z_HOME_POS 181.0
+#define MANUAL_Z_HOME_POS 181.80
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
