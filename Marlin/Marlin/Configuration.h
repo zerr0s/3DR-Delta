@@ -110,7 +110,6 @@
 // Horizontal offset from middle of printer to smooth rod center.
 //#define DELTA_SMOOTH_ROD_OFFSET 137.95 // mm // Initial mesurement
 #define DELTA_SMOOTH_ROD_OFFSET 145.0 // mm
-//#define DELTA_SMOOTH_ROD_OFFSET 140.0 // mm
 
 // Horizontal offset of the universal joints on the end effector.
 #define DELTA_EFFECTOR_OFFSET 21.66
@@ -120,10 +119,8 @@
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
-//#define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET+5.0)
 
 // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
-//#define DELTA_PRINTABLE_RADIUS 65.0
 #define DELTA_PRINTABLE_RADIUS 80.0
 
 // Effective X/Y positions of the three vertical towers.
@@ -191,7 +188,7 @@
 // The minimal temperature defines the temperature below which the heater will not be enabled It is used
 // to check that the wiring to the thermistor is not broken.
 // Otherwise this would lead to the heater being powered on all the time.
-#define HEATER_0_MINTEMP 5
+#define HEATER_0_MINTEMP 0
 #define HEATER_1_MINTEMP 5
 #define HEATER_2_MINTEMP 5
 #define BED_MINTEMP 1
@@ -474,8 +471,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // For deltabots this means top and center of the Cartesian print volume.
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
-//#define MANUAL_Z_HOME_POS 183.9//Reza 180//197//Oli 190//Philippe 174.3//Mark 181.8 // For delta: Distance between nozzle and print surface after homing.
-#define MANUAL_Z_HOME_POS 183.30
+//#define MANUAL_Z_HOME_POS 183.30 // good before crash
+#define MANUAL_Z_HOME_POS 177.50
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
