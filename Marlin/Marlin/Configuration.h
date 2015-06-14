@@ -108,14 +108,15 @@
 #define DELTA_DIAGONAL_ROD 195.0 // mm FIX !!!
 
 // Horizontal offset from middle of printer to smooth rod center.
-//#define DELTA_SMOOTH_ROD_OFFSET 137.95 // mm // Initial mesurement
-#define DELTA_SMOOTH_ROD_OFFSET 145.0 // mm
+//#define DELTA_SMOOTH_ROD_OFFSET 137.95 // mm // initial mesurement
+#define DELTA_SMOOTH_ROD_OFFSET 149.0 // mm
 
 // Horizontal offset of the universal joints on the end effector.
-#define DELTA_EFFECTOR_OFFSET 21.66
+#define DELTA_EFFECTOR_OFFSET 21.66 // initial mesurement
 
 // Horizontal offset of the universal joints on the carriages.(-
-#define DELTA_CARRIAGE_OFFSET 20.46
+//#define DELTA_CARRIAGE_OFFSET 20.46
+#define DELTA_CARRIAGE_OFFSET 21.46
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
@@ -188,7 +189,7 @@
 // The minimal temperature defines the temperature below which the heater will not be enabled It is used
 // to check that the wiring to the thermistor is not broken.
 // Otherwise this would lead to the heater being powered on all the time.
-#define HEATER_0_MINTEMP 0
+#define HEATER_0_MINTEMP 5
 #define HEATER_1_MINTEMP 5
 #define HEATER_2_MINTEMP 5
 #define BED_MINTEMP 1
@@ -226,11 +227,17 @@
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 //3DRT_E3DV5
+/* e3d v5
 #define  DEFAULT_Kp 64.59
 #define  DEFAULT_Ki 7.04
-#define  DEFAULT_Kd 148.16
+#define  DEFAULT_Kd 148.16 */
 
-    /*bias: 89 d: 89 min: 193.68 max: 195.79
+// e3d v6
+#define  DEFAULT_Kp 46.18
+#define  DEFAULT_Ki 5.46
+#define  DEFAULT_Kd 97.61
+
+ /*bias: 89 d: 89 min: 193.68 max: 195.79
  Ku: 107.65 Tu: 18.35
  Classic PID
  Kp: 64.59
@@ -472,7 +479,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
 //#define MANUAL_Z_HOME_POS 183.30 // good before crash
-#define MANUAL_Z_HOME_POS 177.50
+#define MANUAL_Z_HOME_POS 175.65
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
