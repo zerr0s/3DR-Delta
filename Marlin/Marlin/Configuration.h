@@ -227,8 +227,8 @@
 
 // If you are using a preconfigured hotend then you can use one of the value sets by uncommenting it
 //3DRT_E3DV5
-/* e3d v5
-#define  DEFAULT_Kp 64.59
+// e3d v5
+/* #define  DEFAULT_Kp 64.59
 #define  DEFAULT_Ki 7.04
 #define  DEFAULT_Kd 148.16 */
 
@@ -479,7 +479,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
 //#define MANUAL_Z_HOME_POS 183.30 // good before crash
-#define MANUAL_Z_HOME_POS 175.65
+#define MANUAL_Z_HOME_POS 178.0 // v6
+//#define MANUAL_Z_HOME_POS 167.30 // v5
 
 //// MOVEMENT SETTINGS
 #define NUM_AXIS 4 // The axis order in all axis related arrays is X, Y, Z, E
