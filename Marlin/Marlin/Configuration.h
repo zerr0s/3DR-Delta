@@ -105,18 +105,22 @@
 #define DELTA_SEGMENTS_PER_SECOND 200
 
 // Center-to-center distance of the holes in the diagonal push rods.
-#define DELTA_DIAGONAL_ROD 195.0 // mm FIX !!!
+//#define DELTA_DIAGONAL_ROD 195.0 // mm FIX !!!
+#define DELTA_DIAGONAL_ROD 193.0
 
 // Horizontal offset from middle of printer to smooth rod center.
 //#define DELTA_SMOOTH_ROD_OFFSET 137.95 // mm // initial mesurement
-#define DELTA_SMOOTH_ROD_OFFSET 149.0 // mm
+//#define DELTA_SMOOTH_ROD_OFFSET 149.0 // mm
+#define DELTA_SMOOTH_ROD_OFFSET 144.0 // mm
 
 // Horizontal offset of the universal joints on the end effector.
-#define DELTA_EFFECTOR_OFFSET 21.66 // initial mesurement
+//#define DELTA_EFFECTOR_OFFSET 21.66 // initial mesurement
+#define DELTA_EFFECTOR_OFFSET 23.0
 
 // Horizontal offset of the universal joints on the carriages.(-
 //#define DELTA_CARRIAGE_OFFSET 20.46
-#define DELTA_CARRIAGE_OFFSET 21.46
+//#define DELTA_CARRIAGE_OFFSET 21.46
+#define DELTA_CARRIAGE_OFFSET 17.75
 
 // Horizontal distance bridged by diagonal push rods when effector is centered.
 #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-DELTA_EFFECTOR_OFFSET-DELTA_CARRIAGE_OFFSET)
@@ -479,7 +483,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
 //#define MANUAL_Z_HOME_POS 183.30 // good before crash
-#define MANUAL_Z_HOME_POS 178.0 // v6
+#define MANUAL_Z_HOME_POS 177.85 // v6
 //#define MANUAL_Z_HOME_POS 167.30 // v5
 
 //// MOVEMENT SETTINGS
