@@ -111,7 +111,8 @@
 // Horizontal offset from middle of printer to smooth rod center.
 //#define DELTA_SMOOTH_ROD_OFFSET 137.95 // mm // initial mesurement
 //#define DELTA_SMOOTH_ROD_OFFSET 149.0 // mm
-#define DELTA_SMOOTH_ROD_OFFSET 144.0 // mm
+//#define DELTA_SMOOTH_ROD_OFFSET 144.0 // mm // avec mark
+#define DELTA_SMOOTH_ROD_OFFSET 143.50 // mm
 
 // Horizontal offset of the universal joints on the end effector.
 //#define DELTA_EFFECTOR_OFFSET 21.66 // initial mesurement
@@ -483,7 +484,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 #define MANUAL_X_HOME_POS 0
 #define MANUAL_Y_HOME_POS 0
 //#define MANUAL_Z_HOME_POS 183.30 // good before crash
-#define MANUAL_Z_HOME_POS 177.85 // v6
+//#define MANUAL_Z_HOME_POS 177.85 // v6
+#define MANUAL_Z_HOME_POS 177.00 // v6
 //#define MANUAL_Z_HOME_POS 167.30 // v5
 
 //// MOVEMENT SETTINGS
